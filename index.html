@@ -111,8 +111,20 @@
     </header>
 
     <main>
+        <!-- Toast option -->
+
+        <div class="toast show toast-bar  ">
+            <div class="toast-header">
+                <h5 class="text-danger fs-bold"><i class="fa-solid fa-gift"></i><span class="ms-2 ">Get 20%
+                        Discount</span>
+                </h5>
+                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
         <!-- Explore section -->
         <section class="container mt-5">
+
+
             <div class="row g-5">
                 <div class="col-lg-6">
                     <img class="img-fluid rounded" src="images/meeting-1.jpg" alt="">
@@ -226,7 +238,7 @@
                 </div>
 
                 <div class="col">
-                    <div class="card h-100 bg-primary shadow-lg">
+                    <div class="card h-100 bg-primary shadow-lg rounded-4">
 
                         <div class="card-body text-white">
                             <h3 class="card-title">$300</h3>
@@ -427,36 +439,65 @@
             </div>
         </section>
 
+        <!-- Contact section -->
+        <section class="container mb-5">
+            <div class="text-center">
+                <h1>Contact Us</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti atque officiis, <br>
+                    molestiae in neque
+                    consequuntur voluptatum quibusdam et eligendi ducimus!</p>
+            </div>
+            <form class="" action="">
+                <input class="form-control mb-3" type="text" placeholder="Name" name="name" id="">
+                <input class="form-control mb-3" type="email" name="email" placeholder="Email" id="">
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                </div>
+                <button class="px-5 py-2 bg-primary border-0 rounded" type="submit">Submit</button>
+
+            </form>
+        </section>
+
     </main>
     <!-- 
     footer section -->
 
     <footer class="d-flex justify-content-center">
-        <section class=" footer-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <small class="text-white">© 2020 bike. All rights reserved</small>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <h4 class="text-white">Get the App</h4>
-                        <div class="row mt-5 pt-0">
-                            <div class="col-4">
-                                <a class="bg-danger" target="_blank"
+        <section class=" footer-section d-flex align-items-center">
+            <div class="container ">
+                <div class="row ">
+
+                    <div class="col-lg-6 align-items-center mt-3">
+                        <div class="row ">
+                            <div class="col-lg-5 ">
+                                <h4 class="text-white">Get the App</h4>
+
+                                <a class="btn text-white d-flex border border-white rounded-4 app-link" target="_blank"
                                     href="https://apps.apple.com/us/app/apple-store/id375380948">
-                                    <div class="row g-3 border border-white rounded-4 ">
-                                        <div class="col-2 text-white text-center fs-1">
-                                            <i class="fa-brands fa-apple"></i>
-                                        </div>
-                                        <div class="col-10 text-white">
-                                            <h6>Download on the</h6>
-                                            <h5>App Store</h5>
-                                        </div>
+                                    <i class="fa-brands fa-apple fs-1"></i>
+                                    <div class="text-start ms-2">
+                                        <h6>Download on the</h6>
+                                        <h5>App Store</h5>
+                                    </div>
+                                </a>
+
+                                <a class="btn text-white d-flex border border-white rounded-4 app-link mt-3"
+                                    target="_blank" href="https://play.google.com/store/apps/?hl=en&gl=US&pli=1">
+                                    <img src="images/google-play-png-logo-3798.png" alt="" height="35" width="33">
+                                    <div class="text-start ms-2">
+                                        <h6>Download on the</h6>
+                                        <h5>App Store</h5>
                                     </div>
                                 </a>
                             </div>
                         </div>
 
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 ms-md-auto   d-flex align-items-center mt-3 ms-auto">
+                        <small class="text-white">© 2020 bike. All rights reserved</small>
                     </div>
 
                 </div>
